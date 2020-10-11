@@ -10,7 +10,8 @@
 #include "SOS.h"
 void system_init(void){	
 SOS_Init (&TMU_Configuration);
-SOS_Create_Task(Task1,1,0,1);
+SOS_Create_Task(Task1,1,0,5);
+SOS_Create_Task(Task2,1,0,5);
 DIO_init(&ALL_Motor);
 PORTB_DIR=0;
 Motor_Init(MOTOR_1|MOTOR_2);
