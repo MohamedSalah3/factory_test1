@@ -33,8 +33,8 @@
 
 #define MOTOR_OUT_2A_GPIO	(GPIOD)
 #define MOTOR_OUT_2B_GPIO	(GPIOD)
-#define MOTOR_OUT_2A_BIT	(BIT6)
-#define MOTOR_OUT_2B_BIT	(BIT7)
+#define MOTOR_OUT_2A_BIT	(BIT1)
+#define MOTOR_OUT_2B_BIT	(BIT0)
 
 
 

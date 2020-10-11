@@ -28,6 +28,8 @@ typedef enum En_buttonStatus_t{
  * 				  one of the enum (En_buttonId) parameters
  *
  */
+
+uint8_t pushButtonGetState(En_buttonStatus_t status);
 void pushButtonInit(En_buttonId_t en_butotn_id);
 /**
  * Description: read all BTN_x (where x 0, 1, 2, 3) states and store it in the program
@@ -44,5 +46,6 @@ En_buttonStatus_t pushButtonGetStatus(En_buttonId_t en_butotn_id);
 /*
 for external interrupt
 */
+uint8_t pushUpdate(uint8_t status);
 extern void check_button(void);
 #endif /* PUSHBUTTON_H_ */

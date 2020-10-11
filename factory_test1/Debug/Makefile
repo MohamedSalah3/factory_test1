@@ -43,7 +43,11 @@ C_SRCS +=  \
 ../Motor_Config.c \
 ../pushButton.c \
 ../PWM.c \
-../PWM_Config.c
+../PWM_Config.c \
+../SOS.c \
+../SOS_Config.c \
+../timer.c \
+../Timer_Config.c
 
 
 PREPROCESSING_SRCS += 
@@ -61,7 +65,11 @@ Motor.o \
 Motor_Config.o \
 pushButton.o \
 PWM.o \
-PWM_Config.o
+PWM_Config.o \
+SOS.o \
+SOS_Config.o \
+timer.o \
+Timer_Config.o
 
 
 OBJS_AS_ARGS +=  \
@@ -73,7 +81,11 @@ Motor.o \
 Motor_Config.o \
 pushButton.o \
 PWM.o \
-PWM_Config.o
+PWM_Config.o \
+SOS.o \
+SOS_Config.o \
+timer.o \
+Timer_Config.o
 
 
 C_DEPS +=  \
@@ -85,7 +97,11 @@ Motor.d \
 Motor_Config.d \
 pushButton.d \
 PWM.d \
-PWM_Config.d
+PWM_Config.d \
+SOS.d \
+SOS_Config.d \
+timer.d \
+Timer_Config.d
 
 
 C_DEPS_AS_ARGS +=  \
@@ -97,7 +113,11 @@ Motor.d \
 Motor_Config.d \
 pushButton.d \
 PWM.d \
-PWM_Config.d
+PWM_Config.d \
+SOS.d \
+SOS_Config.d \
+timer.d \
+Timer_Config.d
 
 
 OUTPUT_FILE_PATH +=factory_test1.elf
@@ -109,6 +129,14 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
 
 
 

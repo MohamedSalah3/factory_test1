@@ -20,3 +20,11 @@ PWM.c
 
 PWM_Config.c
 
+SOS.c
+
+SOS_Config.c
+
+timer.c
+
+Timer_Config.c
+
