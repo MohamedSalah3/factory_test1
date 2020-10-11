@@ -47,7 +47,7 @@ if( u8_Button_press[0]== Pressed)
 	/************************************************************************/
 	/*         De bouncing Using Counting Algorithm			                */
 	/************************************************************************/
-	if( (u8_S_button_status[0]) > 10)
+	if( (u8_S_button_status[0]) > 100)
 	return Pressed;
 	else {return Released;}
 }else{return Released;}

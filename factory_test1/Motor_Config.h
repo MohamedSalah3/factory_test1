@@ -16,8 +16,10 @@
 #define MOTOR_STOP 	    	0
 #define MOTOR_FORWARD   	1
 #define MOTOR_BACKWARD 	  2
-
-
+#define UNHOLD             1
+#define PRESSED_HOLD       2
+#define FIFTY_PRECENT_PWM  3
+#define MULTIPLE_PRESSED   4
 
 #define MOTOR_EN_1_GPIO		(GPIOD)
 #define MOTOR_EN_1_BIT		(BIT4)

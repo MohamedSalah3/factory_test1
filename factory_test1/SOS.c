@@ -7,7 +7,7 @@
 #include "pushButton.h"
 #include "SOS.h"
 #include "Interrupts.h"
-
+#include "motor.h"
 #define Buffer_Size 4
 uint8_t u8_Init_finished=0;
 
@@ -249,42 +249,58 @@ u8_Init_finished=0;
 	}
 
 }
-*/void Task1(void){	/*
-	
-static uint8_t u8_Counter=0;
-static uint8_t u8_Counter1=0;
-	if (pushButtonGetStatus(BTN_0))
-	{	
-		u8_Counter++;
-	}
-	if (u8_Counter > 20)
-	{
-	stu8_increment++;
-	u8_Counter=0;
-	}
-	
-	if (pushButtonGetStatus(BTN_1))
-	{
-		u8_Counter1++;
-		//stu8_increment++;
-	}
-	if (u8_Counter1 > 20)
-	{
-		stu8_increment--;
-		u8_Counter1=0;
-	}
-	
 */
-static u8_c=0;
-u8_c +=pushButtonGetStatus(BTN_0);
-	
-}/*
-void Tmu_excute(void){
-	
+static uint8_t flag;
+static uint8_t u8_motor_state;
+static uint8_t u8_counter;
+void Task1(void)
+{		
+if(pushButtonGetStatus(BTN_0))
+{
+	u8_counter++;
+	if (u8_counter <= 50)
+	{
+		u8_motor_state=UNHOLD;
 		
+	}
+	else if (u8_counter > 50 && u8_counter < 255)
+	{
+		u8_motor_state=PRESSED_AND_HOLD;
+		
+	}else{u8_counter=0;
+	u8_motor_state=0;}
+	
+
+}
+	
+/*two times routine*/
+
+
+
+if(pushButtonGetStatus(BTN_0)== Released && u8_counter > 20 && u8_counter < 50)
+{
+flag=0;
+
+}
+else if (pushButtonGetStatus(BTN_0)==Pressed)
+{
+if(flag == 0)
+{
+	u8_motor_state=FIFTY_PRECENT_PWM;
+	flag = 1;
+}
+	
 }
 
-*/
+
+
+
+
+}
+
+
+
+
 void timer_interrupt(void)
 {
 	u8Excution_to_be_done =1;	
