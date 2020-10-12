@@ -38,6 +38,8 @@ C_SRCS +=  \
 ../DIO.c \
 ../DIO_config.c \
 ../factory_test1.c \
+../ICU.c \
+../ICU_Config.c \
 ../Interrupts.c \
 ../Motor.c \
 ../Motor_Config.c \
@@ -46,8 +48,11 @@ C_SRCS +=  \
 ../PWM_Config.c \
 ../SOS.c \
 ../SOS_Config.c \
+../Tasks.c \
 ../timer.c \
-../Timer_Config.c
+../Timer_Config.c \
+../US.c \
+../UsConfig.c
 
 
 PREPROCESSING_SRCS += 
@@ -60,6 +65,8 @@ OBJS +=  \
 DIO.o \
 DIO_config.o \
 factory_test1.o \
+ICU.o \
+ICU_Config.o \
 Interrupts.o \
 Motor.o \
 Motor_Config.o \
@@ -68,14 +75,19 @@ PWM.o \
 PWM_Config.o \
 SOS.o \
 SOS_Config.o \
+Tasks.o \
 timer.o \
-Timer_Config.o
+Timer_Config.o \
+US.o \
+UsConfig.o
 
 
 OBJS_AS_ARGS +=  \
 DIO.o \
 DIO_config.o \
 factory_test1.o \
+ICU.o \
+ICU_Config.o \
 Interrupts.o \
 Motor.o \
 Motor_Config.o \
@@ -84,14 +96,19 @@ PWM.o \
 PWM_Config.o \
 SOS.o \
 SOS_Config.o \
+Tasks.o \
 timer.o \
-Timer_Config.o
+Timer_Config.o \
+US.o \
+UsConfig.o
 
 
 C_DEPS +=  \
 DIO.d \
 DIO_config.d \
 factory_test1.d \
+ICU.d \
+ICU_Config.d \
 Interrupts.d \
 Motor.d \
 Motor_Config.d \
@@ -100,14 +117,19 @@ PWM.d \
 PWM_Config.d \
 SOS.d \
 SOS_Config.d \
+Tasks.d \
 timer.d \
-Timer_Config.d
+Timer_Config.d \
+US.d \
+UsConfig.d
 
 
 C_DEPS_AS_ARGS +=  \
 DIO.d \
 DIO_config.d \
 factory_test1.d \
+ICU.d \
+ICU_Config.d \
 Interrupts.d \
 Motor.d \
 Motor_Config.d \
@@ -116,8 +138,11 @@ PWM.d \
 PWM_Config.d \
 SOS.d \
 SOS_Config.d \
+Tasks.d \
 timer.d \
-Timer_Config.d
+Timer_Config.d \
+US.d \
+UsConfig.d
 
 
 OUTPUT_FILE_PATH +=factory_test1.elf
@@ -129,6 +154,16 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
+
+
 
 
 

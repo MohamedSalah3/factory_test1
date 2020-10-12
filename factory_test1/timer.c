@@ -64,6 +64,7 @@ case TIMER_CH0:
 		 */
 			G_interrupt_Enable();
 			TIMSK |= T0_INTERRUPT_NORMAL;
+		//	TIMER0OVF_INT=(Timer_cfg->Timer_Cbk_ptr);
 			break;
 		}
 		default :

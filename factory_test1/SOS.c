@@ -4,11 +4,9 @@
  * Created: 24/02/2020 01:22:29 م
  *  Author: mo
  */ 
-#include "pushButton.h"
 #include "SOS.h"
-#include "Interrupts.h"
-#include "motor.h"
-#define Buffer_Size 4
+
+#define Buffer_Size 2
 uint8_t u8_Init_finished=0;
 
 uint8_t u8_Is_Intialized=0;
@@ -34,6 +32,8 @@ switch(u8_channel_ID)
 	case TIMER_CH0:
 			G_interrupt_Enable();
 			Timer_Init(&Timer_Configuration0);
+			
+			
 				break;
 	case TIMER_CH2:
 		G_interrupt_Enable();
@@ -250,56 +250,6 @@ u8_Init_finished=0;
 
 }
 */
-static uint8_t flag;
-static uint8_t u8_motor_state;
-static uint8_t u8_counter;
-void Task1(void)
-{		
-if(pushButtonGetStatus(BTN_0))
-{
-	u8_counter++;
-	if (u8_counter <= 50)
-	{
-		u8_motor_state=UNHOLD;
-		
-	}
-	else if (u8_counter > 50 && u8_counter < 255)
-	{
-		u8_motor_state=PRESSED_AND_HOLD;
-		
-	}else{u8_counter=0;
-	u8_motor_state=0;}
-	
-
-}
-	
-/*two times routine*/
-
-
-
-if(pushButtonGetStatus(BTN_0)== Released && u8_counter > 20 && u8_counter < 50)
-{
-flag=0;
-
-}
-else if (pushButtonGetStatus(BTN_0)==Pressed)
-{
-if(flag == 0)
-{
-	u8_motor_state=FIFTY_PRECENT_PWM;
-	flag = 1;
-}
-	
-}
-
-
-
-
-
-}
-
-
-
 
 void timer_interrupt(void)
 {

@@ -13,6 +13,7 @@
 #include "registers.h"
 #include "Error.h"
 #include "std_types.h"
+#include "Interrupts.h"
 
 
 /************************************************************************/
@@ -114,6 +115,7 @@ typedef unsigned char ERROR_STATUS;
 /********************************************************/
 /********Extern Configuration Structure******************/
 extern Timer_cfg_s Timer_Configuration0;
+extern Timer_cfg_s Timer_Configuration1;
 extern Timer_cfg_s Timer_Configuration2;
 extern Timer_cfg_s Timer_Deinit_Configuration0;
 #endif /* TIMERSCONFIG_H_ */

@@ -5,11 +5,12 @@
  * Created: 21/01/2020 01:18:13 م
  *  Author: mo
  */
-
+#include "SOS.h"
 #include "Interrupts.h"
+#include "ICU.h"
 ptr_to_Fun INT0_external_interrupt;
 ptr_to_Fun INT1_external_interrupt;
-ptr_to_Fun INT2_external_interrupt;//=EXTI;
+ptr_to_Fun INT2_external_interrupt=EXTI;
 ptr_to_Fun TIMER2COMP;//=Timer2_interrupt_COMP_routine;
 ptr_to_Fun TIMER2OVF;//=Timer2_interrupt_routine;
 ptr_to_Fun TIMER1CAPT;

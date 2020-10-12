@@ -1,8 +1,43 @@
-Interrupts.d Interrupts.o: .././Interrupts.c .././Interrupts.h \
- .././registers.h .././std_types.h
+Interrupts.d Interrupts.o: .././Interrupts.c .././SOS.h .././SOS_Config.h \
+ .././Tasks.h .././std_types.h .././Timer.h .././registers.h \
+ .././Timer_Config.h .././Error.h .././Interrupts.h .././pushButton.h \
+ .././pushButtonConfig.h .././DIO.h .././DIO_config.h .././motor.h \
+ .././Motor_Config.h .././PWM.h .././PWM_Comfig.h .././Dio.h .././ICU.h
 
-.././Interrupts.h:
+.././SOS.h:
+
+.././SOS_Config.h:
+
+.././Tasks.h:
+
+.././std_types.h:
+
+.././Timer.h:
 
 .././registers.h:
 
-.././std_types.h:
+.././Timer_Config.h:
+
+.././Error.h:
+
+.././Interrupts.h:
+
+.././pushButton.h:
+
+.././pushButtonConfig.h:
+
+.././DIO.h:
+
+.././DIO_config.h:
+
+.././motor.h:
+
+.././Motor_Config.h:
+
+.././PWM.h:
+
+.././PWM_Comfig.h:
+
+.././Dio.h:
+
+.././ICU.h:

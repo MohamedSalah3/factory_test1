@@ -1,32 +1,34 @@
-SOS.d SOS.o: .././SOS.c .././pushButton.h .././pushButtonConfig.h \
- .././registers.h .././std_types.h .././Error.h .././DIO.h \
- .././DIO_config.h .././SOS.h .././SOS_Config.h .././Timer.h \
- .././Timer_Config.h .././Interrupts.h .././motor.h .././Motor_Config.h \
- .././PWM.h .././PWM_Comfig.h .././Dio.h
-
-.././pushButton.h:
-
-.././pushButtonConfig.h:
-
-.././registers.h:
-
-.././std_types.h:
-
-.././Error.h:
-
-.././DIO.h:
-
-.././DIO_config.h:
+SOS.d SOS.o: .././SOS.c .././SOS.h .././SOS_Config.h .././Tasks.h \
+ .././std_types.h .././Timer.h .././registers.h .././Timer_Config.h \
+ .././Error.h .././Interrupts.h .././pushButton.h .././pushButtonConfig.h \
+ .././DIO.h .././DIO_config.h .././motor.h .././Motor_Config.h .././PWM.h \
+ .././PWM_Comfig.h .././Dio.h .././ICU.h
 
 .././SOS.h:
 
 .././SOS_Config.h:
 
+.././Tasks.h:
+
+.././std_types.h:
+
 .././Timer.h:
+
+.././registers.h:
 
 .././Timer_Config.h:
 
+.././Error.h:
+
 .././Interrupts.h:
+
+.././pushButton.h:
+
+.././pushButtonConfig.h:
+
+.././DIO.h:
+
+.././DIO_config.h:
 
 .././motor.h:
 
@@ -37,3 +39,5 @@ SOS.d SOS.o: .././SOS.c .././pushButton.h .././pushButtonConfig.h \
 .././PWM_Comfig.h:
 
 .././Dio.h:
+
+.././ICU.h:

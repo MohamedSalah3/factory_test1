@@ -8,8 +8,8 @@
 
 #ifndef SOS_CONFIG_H_
 #define SOS_CONFIG_H_
-#include "std_types.h"
-#include "Timer.h"
+
+#include "Tasks.h"
 
 /******************************************************************************/
 typedef struct TMU_ConfigType{

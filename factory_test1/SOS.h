@@ -9,9 +9,7 @@
 #ifndef SOS_H_
 #define SOS_H_
 #include "SOS_Config.h"
-#include "Timer.h"
-#include "DIO.h"
-#include "Error.h"
+
 typedef void (*ptr_to_Fun) (void);
 
 
@@ -56,8 +54,7 @@ ERROR_STATUS SOS_Run(void);
 /***************************************************************/
 /*CONSUMERS(Toggle leds)*/
 /***************************************************************/
-extern void Task1(void);
-extern void Task2(void);
+
 void Tmu_excute(void);
 
 typedef struct start_status

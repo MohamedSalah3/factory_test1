@@ -19,7 +19,16 @@ Timer_cfg_s Timer_Configuration0  =
 		TIMER_CH0,
 		TIMER_MODE,
 		TIMER_INTERRUPT_MODE,
-		TIMER_PRESCALER_64,/*it will not start untill we call timer start function*/
+		TIMER_PRESCALER_1024,
+		timer_interrupt/*it will not start untill we call timer start function*/
+};
+Timer_cfg_s Timer_Configuration1  =
+{
+	TIMER_CH1,
+	TIMER_MODE,
+	TIMER_POLLING_MODE,
+	TIMER_PRESCALER_1024,
+	/*it will not start untill we call timer start function*/
 };
 Timer_cfg_s Timer_Deinit_Configuration0  =
 {

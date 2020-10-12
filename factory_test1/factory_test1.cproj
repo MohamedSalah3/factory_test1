@@ -85,6 +85,18 @@
     <Compile Include="factory_test1.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="ICU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ICU.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ICU_Config.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ICU_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Interrupts.c">
       <SubType>compile</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     <Compile Include="std_types.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Tasks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Tasks.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="timer.c">
       <SubType>compile</SubType>
     </Compile>
@@ -152,6 +170,18 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Timer_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="US.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Us.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UsConfig.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UsConfig.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

@@ -8,6 +8,10 @@ DIO_config.c
 
 factory_test1.c
 
+ICU.c
+
+ICU_Config.c
+
 Interrupts.c
 
 Motor.c
@@ -24,7 +28,13 @@ SOS.c
 
 SOS_Config.c
 
+Tasks.c
+
 timer.c
 
 Timer_Config.c
+
+US.c
+
+UsConfig.c
 
